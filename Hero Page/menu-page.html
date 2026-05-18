@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homer Coffee Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Hero Page/menu-page.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">Homer Coffee</a>
+      <a href="index.html" class="nav-back">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        Back to Home
+      </a>
+    </nav>
+
+    <header class="menu-hero">
+      <span class="menu-hero-tag">Our Menu</span>
+      <h1>Crafted with <span>Love & Beans</span></h1>
+      <p>*Short Sentences</p>
+    </header>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="coffee">☕ Coffee</button>
+      <button class="filter-btn" data-filter="noncoffee">🧋 Non-Coffee</button>
+      <button class="filter-btn" data-filter="food">🍞 Food</button>
+      <button class="filter-btn" data-filter="dessert">🍮 Dessert</button>
+    </div>
+
+    <main class="menu-wrap">
+      <!--kopi andalan boy-->
+      <section class="menu-section reveal" data-category="coffee">
+        <div class="menu-section-header">
+          <span class="section-emoji">☕</span>
+          <h2>Signature Coffee</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card featured">
+            <div class="menu-card-emoji">✨</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Homer's Signature</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">*description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-staff">*Badge</span>
+                <span class="badge badge-hot">Hot/Cold</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🖤</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu2</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">*description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-hot">Hot/Cold</span>
+                <span class="badge badge-cold">Iced/nonIced</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🥛</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu3</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">*description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-hot">Hot/Cold</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🍦</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu4</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">*description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-new">New</span>
+                <span class="badge badge-cold">Iced/nonIced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="menu-divider" />
+
+      <!--nonkopi-->
+      <section class="menu-section reveal" data-category="noncoffee">
+        <div class="menu-section-header">
+          <span class="section-emoji">🧋</span>
+          <h2>Non-Coffee</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-emoji">🍵</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu1</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-staff">Staff Pick</span>
+                <span class="badge badge-vegan">Vegan</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🌸</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu2</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-cold">Cold</span>
+                <span class="badge badge-new">New</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🍫</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu3</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-hot">Hot</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🧃</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu4</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-cold">Cold</span>
+                <span class="badge badge-vegan">Vegan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="menu-divider" />
+
+      <!--emameun-->
+      <section class="menu-section reveal" data-category="food">
+        <div class="menu-section-header">
+          <span class="section-emoji">🍞</span>
+          <h2>Food</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card featured">
+            <div class="menu-card-emoji">🥐</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu1</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-staff">Staff Pick</span>
+                <span class="badge badge-new">Fresh Daily</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🥚</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu2</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-vegan">Veg</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🥪</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu3</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description.</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-hot">badge</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🧀</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu4</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="menu-divider" />
+
+      <!--disert cemilan-->
+      <section class="menu-section reveal" data-category="dessert">
+        <div class="menu-section-header">
+          <span class="section-emoji">🍮</span>
+          <h2>Dessert</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-emoji">🍰</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">menu1</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-staff">Staff Pick</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🍮</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu2</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-new">New</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🍪</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Menu3</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">description</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-hot">Bestseller</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-emoji">🫙</div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Bestseller 1</span>
+                <span class="menu-card-price">Rp xxxx</span>
+              </div>
+              <p class="menu-card-desc">*Product desc</p>
+              <div class="menu-card-badges">
+                <span class="badge badge-staff">Staff Pick</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p class="menu-note">
+        *****.<br />
+        For reservations or large orders:
+        <a href="mailto:hello@homercoffee.com">*email</a>
+      </p>
+    </main>
+
+    <script src="menu-page.js "></script>
+  </body>
+</html>
