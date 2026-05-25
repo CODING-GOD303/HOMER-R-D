@@ -257,7 +257,7 @@ body {
 }
 
 .hero-desc {
-  font-size: 11px;
+  font-size: 13px;
   color: rgba(240, 237, 232, 0.55);
   max-width: 400px;
   margin-bottom: 2.5rem;
@@ -447,9 +447,9 @@ body {
 }
 
 .profile-right p {
-  color: var(--muted);
+  color: var(--fg);
   margin-bottom: 1rem;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.01em;
 }
