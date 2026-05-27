@@ -38,7 +38,7 @@ body {
   color: var(--bg);
 }
 
-/* ── NAV ── */
+/*NAV*/
 nav {
   position: sticky;
   top: 0;
@@ -79,7 +79,7 @@ nav {
   color: var(--text);
 }
 
-/* ── HERO ── */
+/*HERO PAGE*/
 .hero {
   border-bottom: 1px solid var(--border);
   display: grid;
@@ -169,14 +169,14 @@ nav {
   color: var(--muted);
 }
 
-/* ── SECTION WRAP ── */
+/*SECTION WRAP*/
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* ── STORY ── */
+/*STORY CARD*/
 .story {
   border-bottom: 1px solid var(--border);
   padding: 5rem 0;
@@ -290,7 +290,7 @@ nav {
   letter-spacing: 0.01em;
 }
 
-/* ── TEAM ── */
+/*TEAM*/
 .team {
   border-bottom: 1px solid var(--border);
   padding: 5rem 0;
@@ -359,7 +359,7 @@ nav {
   line-height: 1.75;
 }
 
-/* ── TIMELINE ── */
+/*TIMELINE*/
 .timeline {
   border-bottom: 1px solid var(--border);
   padding: 5rem 0;
@@ -418,7 +418,7 @@ nav {
   line-height: 1.75;
 }
 
-/* ── CTA ── */
+/*CTA*/
 .cta {
   padding: 5rem 0;
   border-bottom: 1px solid var(--border);
@@ -499,7 +499,7 @@ nav {
   border-color: rgba(240, 237, 232, 0.35);
 }
 
-/* ── FOOTER ── */
+/*FOOTER*/
 footer {
   padding: 1.5rem 2rem;
   display: flex;
@@ -539,7 +539,7 @@ footer p {
   color: rgba(240, 237, 232, 0.7);
 }
 
-/* ── REVEAL ── */
+/*REVEAL*/
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -553,7 +553,7 @@ footer p {
   transform: translateY(0);
 }
 
-/* ── RESPONSIVE ── */
+/*RESPONSIV*/
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
