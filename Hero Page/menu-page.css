@@ -422,6 +422,243 @@ nav {
   opacity: 0.65;
 }
 
+/* ── MENU CARD CURSOR ── */
+.menu-card {
+  cursor: crosshair;
+}
+
+/* ── DETAIL MODAL ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  background: var(--surface);
+  border: 1px solid rgba(240, 237, 232, 0.14);
+  max-width: 580px;
+  width: 100%;
+  position: relative;
+  transform: translateY(18px);
+  transition: transform 0.26s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-overlay.open .modal {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-emoji {
+  width: 72px;
+  min-width: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-right: 1px solid var(--border);
+}
+
+.modal-title-block {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.modal-category {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.modal-name {
+  font-family: var(--font-head);
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: var(--text);
+}
+
+.modal-close {
+  width: 52px;
+  min-width: 52px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 1.4rem;
+  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--t), background var(--t);
+  font-family: var(--font-body);
+}
+
+.modal-close:hover {
+  color: var(--text);
+  background: var(--surface2);
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-row-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.modal-row-value {
+  font-size: 12px;
+  color: var(--text);
+  text-align: right;
+  max-width: 60%;
+}
+
+.modal-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-price-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.modal-price {
+  font-family: var(--font-head);
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  line-height: 1;
+}
+
+.modal-desc-block {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-desc-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.modal-desc-text {
+  font-size: 12px;
+  color: rgba(240, 237, 232, 0.6);
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+}
+
+.modal-badges-block {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-footer {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.modal-footer-note {
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+}
+
+.modal-order-btn {
+  background: var(--red);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.5rem;
+  border: 1px solid var(--red);
+  cursor: crosshair;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--t), color var(--t);
+  flex-shrink: 0;
+}
+
+.modal-order-btn:hover {
+  background: transparent;
+  color: var(--red);
+}
+
+/* ── CARD HINT ── */
+.menu-card-hint {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(240, 237, 232, 0.18);
+  margin-top: 0.75rem;
+  transition: color var(--t);
+}
+
+.menu-card:hover .menu-card-hint {
+  color: rgba(240, 237, 232, 0.45);
+}
+
 /* ── REVEAL ANIMATION ── */
 .reveal {
   opacity: 0;
@@ -435,4 +672,3 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
-
