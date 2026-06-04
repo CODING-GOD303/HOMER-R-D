@@ -82,13 +82,14 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── PHOTO LIGHTBOX ──
-const lightbox      = document.getElementById('lightbox');
-const lbImg         = document.getElementById('lightboxImg');
-const lbCaption     = document.getElementById('lightboxCaption');
-const lbCounter     = document.getElementById('lightboxCounter');
-const lbClose       = document.getElementById('lightboxClose');
-const lbPrev        = document.getElementById('lightboxPrev');
-const lbNext        = document.getElementById('lightboxNext');
+const lightbox   = document.getElementById('lightbox');
+const lbImg      = document.getElementById('lightboxImg');
+const lbCaption  = document.getElementById('lightboxCaption');
+const lbDesc     = document.getElementById('lightboxDesc');
+const lbCounter  = document.getElementById('lightboxCounter');
+const lbClose    = document.getElementById('lightboxClose');
+const lbPrev     = document.getElementById('lightboxPrev');
+const lbNext     = document.getElementById('lightboxNext');
 
 if (lightbox) {
   const photoItems = Array.from(document.querySelectorAll('.photo-item[data-src]'));
@@ -98,9 +99,10 @@ if (lightbox) {
     const item = photoItems[index];
     lbImg.style.opacity = '0';
     setTimeout(() => {
-      lbImg.src = item.dataset.src;
-      lbImg.alt = item.dataset.caption || '';
+      lbImg.src        = item.dataset.src;
+      lbImg.alt        = item.dataset.caption || '';
       lbCaption.textContent = item.dataset.caption || '';
+      lbDesc.textContent    = item.dataset.desc    || '';
       lbCounter.textContent = `${index + 1} / ${photoItems.length}`;
       lbImg.style.opacity = '1';
     }, 150);
@@ -133,13 +135,13 @@ if (lightbox) {
   });
 
   lightbox.addEventListener('click', e => {
-    if (e.target === lightbox || e.target === lbImg.parentElement) closeLightbox();
+    if (e.target === lightbox) closeLightbox();
   });
 
   document.addEventListener('keydown', e => {
     if (!lightbox.classList.contains('open')) return;
-    if (e.key === 'Escape')      closeLightbox();
-    if (e.key === 'ArrowLeft')   showPhoto((current - 1 + photoItems.length) % photoItems.length);
-    if (e.key === 'ArrowRight')  showPhoto((current + 1) % photoItems.length);
+    if (e.key === 'Escape')     closeLightbox();
+    if (e.key === 'ArrowLeft')  showPhoto((current - 1 + photoItems.length) % photoItems.length);
+    if (e.key === 'ArrowRight') showPhoto((current + 1) % photoItems.length);
   });
 }
