@@ -442,6 +442,7 @@ body {
   padding: 3rem 0 3rem 3rem;
   text-align: justify;
   text-justify: inter-word;
+  justify-content: center;
 }
 
 .profile-right p {

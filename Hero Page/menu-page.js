@@ -44,6 +44,12 @@ const badgeClassMap = {
 };
 
 function openModal(card) {
+  const img = document.getElementById('modalImg');
+  img.style.opacity = '0';
+  img.src = card.dataset.img || '';
+  img.alt = card.dataset.name || '';
+  img.onload = () => { img.style.opacity = '1'; };
+
   document.getElementById('modalEmoji').textContent    = card.dataset.emoji    || '';
   document.getElementById('modalCategory').textContent = card.dataset.category || '';
   document.getElementById('modalName').textContent     = card.dataset.name     || '';
@@ -85,4 +91,4 @@ overlay.addEventListener('click', e => {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
-}); 
+});
