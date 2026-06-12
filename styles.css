@@ -518,7 +518,7 @@ body {
   font-family: var(--font-head);
   font-size: 3.5rem;
   font-weight: 400;
-  color: rgba(10, 10, 10, 0.08);
+  color: rgba(10, 10, 10, 0.582);
   line-height: 1;
   margin-bottom: 1rem;
   transition: color var(--t);

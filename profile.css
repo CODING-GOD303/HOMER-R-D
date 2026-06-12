@@ -85,6 +85,9 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 70vh;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .hero-left {
@@ -195,7 +198,7 @@ nav {
 }
 
 .section-tag {
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -224,6 +227,9 @@ nav {
   letter-spacing: 0.01em;
   margin-bottom: 1.5rem;
   max-width: 600px;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .story-body p:last-child {
