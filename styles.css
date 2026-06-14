@@ -541,7 +541,6 @@ body {
   transition: color var(--t);
 }
 
-/* ─── ARTICLES ─────────────────────────────────── */
 .articles {
   padding: 6rem 0;
   background: var(--fg);
@@ -679,7 +678,6 @@ body {
   color: rgba(240, 237, 232, 0.2);
 }
 
-/* ─── LOCATION ─────────────────────────────────── */
 .location {
   padding: 6rem 0;
   border-bottom: 1px solid var(--border);
@@ -809,7 +807,6 @@ body {
   opacity: 0.65;
 }
 
-/* ─── CONTACT ──────────────────────────────────── */
 .contact {
   padding: 6rem 0;
   background: var(--fg);
@@ -935,8 +932,6 @@ body {
   background: transparent;
   color: var(--red);
 }
-
-/* ─── FOOTER ───────────────────────────────────── */
 .footer {
   padding: 1.5rem 0;
   background: var(--fg);
@@ -995,7 +990,6 @@ body {
   color: rgba(240, 237, 232, 0.15);
 }
 
-/* ─── SCROLL REVEAL ────────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -1009,7 +1003,6 @@ body {
   transform: translateY(0);
 }
 
-/* ─── RESPONSIVE ───────────────────────────────── */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -1103,7 +1096,7 @@ body {
     flex-wrap: wrap;
   }
 }
-/* ── PHOTO COLLAGE ── */
+
 .photo-collage {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
@@ -1167,7 +1160,7 @@ body {
   opacity: 1;
 }
 
-/* ── LIGHTBOX ── */
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -1213,7 +1206,6 @@ body {
   color: #fff;
 }
 
-/* floating card */
 .lightbox-inner {
   position: relative;
   display: grid;
@@ -1226,7 +1218,6 @@ body {
   box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
 }
 
-/* left: image */
 .lightbox-img-wrap {
   position: relative;
   background: #111;
@@ -1245,7 +1236,6 @@ body {
   min-height: 0;
 }
 
-/* nav bar at bottom of image */
 .lightbox-img-nav {
   display: flex;
   align-items: center;
@@ -1287,7 +1277,6 @@ body {
   color: rgba(240, 237, 232, 0.3);
 }
 
-/* right: white panel, same height */
 .lightbox-panel {
   background: #fff;
   display: flex;
@@ -1347,7 +1336,6 @@ body {
   color: #aaa;
 }
 
-/* mobile */
 @media (max-width: 700px) {
   .lightbox-inner {
     grid-template-columns: 1fr;

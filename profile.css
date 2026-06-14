@@ -296,7 +296,6 @@ nav {
   letter-spacing: 0.01em;
 }
 
-/*TEAM*/
 .team {
   border-bottom: 1px solid var(--border);
   padding: 5rem 0;
@@ -394,7 +393,6 @@ nav {
   line-height: 1.75;
 }
 
-/*TIMELINE*/
 .timeline {
   border-bottom: 1px solid var(--border);
   padding: 5rem 0;
@@ -453,7 +451,6 @@ nav {
   line-height: 1.75;
 }
 
-/*CTA*/
 .cta {
   padding: 5rem 0;
   border-bottom: 1px solid var(--border);
@@ -534,7 +531,6 @@ nav {
   border-color: rgba(240, 237, 232, 0.35);
 }
 
-/*FOOTER*/
 footer {
   padding: 1.5rem 2rem;
   display: flex;
@@ -574,7 +570,6 @@ footer p {
   color: rgba(240, 237, 232, 0.7);
 }
 
-/*REVEAL*/
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -588,7 +583,6 @@ footer p {
   transform: translateY(0);
 }
 
-/*RESPONSIV*/
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;

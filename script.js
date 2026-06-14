@@ -81,7 +81,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ── PHOTO LIGHTBOX ──
 const lightbox   = document.getElementById('lightbox');
 const lbImg      = document.getElementById('lightboxImg');
 const lbCaption  = document.getElementById('lightboxCaption');

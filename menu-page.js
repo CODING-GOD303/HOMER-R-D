@@ -1,4 +1,3 @@
-//Tombol Filter
 const filterBtns = document.querySelectorAll('.filter-btn');
 const sections   = document.querySelectorAll('.menu-section');
 
@@ -15,7 +14,6 @@ filterBtns.forEach(btn => {
   });
 });
 
-//Animasi Scrollreveal
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -27,7 +25,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ── DETAIL MODAL ──
 const overlay   = document.getElementById('menuModal');
 const modalClose = document.getElementById('modalClose');
 
